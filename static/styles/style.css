@@ -1,0 +1,81 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.vis {
+    width: 65%;
+    height: 62%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    transform: scale(1.5);
+    align-self: center;
+    justify-self: center;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: coral;
+    border-style: solid;
+    border-width: 3px;
+    border-color: chocolate;
+
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+}
+
+.navor {
+    text-align: center;
+    align-self: center;
+    font-family: 'MontSerrat', sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.navbut {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+}
+
+.naventry {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(5, 15%) 1fr;
+    font-family: 'MontSerrat', sans-serif;
+    color: white;
+}
+
+.entrybox {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+    align-self: start;
+    font-family: 'MontSerrat', sans-serif;
+}
+
+.entrybutton {
+    align-self: start;
+    grid-row: 3;
+    width: 20%;
+    font-weight: bold;
+}
+
+.entryin {
+    grid-row: 2;
+    height: 80%;
+    font-size:180%;
+}

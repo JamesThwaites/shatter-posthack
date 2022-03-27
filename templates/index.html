@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html id="frame">
+
+<head>
+    <title>Shatter</title>
+    <link rel="stylesheet "href="/static/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "https://d3js.org/d3.v7.min.js"></script>
+    <script src = "/static/App.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <button class="navbut">Log in to Reddit!</button>
+            <h1 class="navor">OR</h1>
+            <div class="naventry">
+                <h2 class="entrybox">Enter your favourite subs manually</h2><br>
+                <input type="text" class="entrybox entryin"id="addIn" value="" />
+                <button class="entrybox entrybutton" id="addButton" onclick="addSub('addIn')">Add!</button>
+            </div>
+        </nav>
+        <div id = "DataVis" class="vis" height=100%></div>
+        
+    </div>
+</body>
+</html>

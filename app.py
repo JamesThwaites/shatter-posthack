@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, escape
+from flask import Flask, jsonify, request, escape, render_template
 from flask_cors import CORS
 from compare_reddits import compareSubList, compareTwoSubs
 import json
@@ -25,3 +25,7 @@ def check_sub(name):
         return 'valid'
     else:
         return 'invalid'
+
+@app.route('/')
+def retIndex():
+    return render_template('index.html')
